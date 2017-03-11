@@ -47,7 +47,7 @@ console.log(bango1, bango2)
 */
 
 function add(num1, num2){
-	var sum = num1 + num2;
+	var sum = num1 + num2; //creating var sum inside
 	return sum;
 }
 var sum = add(bango1, bango2);
@@ -68,8 +68,7 @@ console.log(sum);
 */ 
 
 function subtract(num1, num2){
-	var difference = num1 - num2;
-	return difference;
+		return num1 - num2;
 }
 var difference = subtract(bango2, bango1);
 console.log(difference);
