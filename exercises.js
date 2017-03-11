@@ -27,7 +27,9 @@ console.log(testGreeting); // printing the output value of the function.
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
 
-
+var bango1 = 6;
+var bango2 = 9;
+console.log(bango1, bango2)
 
 /*
  * #2
@@ -44,7 +46,12 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `sum` to test your code.
 */
 
-
+function add(num1, num2){
+	var sum = num1 + num2;
+	return sum;
+}
+var sum = add(bango1, bango2);
+console.log(sum);
 
 /*
  * #3
@@ -60,7 +67,12 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `difference` to test your code.
 */ 
 
-
+function subtract(num1, num2){
+	var difference = num1 - num2;
+	return difference;
+}
+var difference = subtract(bango2, bango1);
+console.log(difference);
 
 /*
  * #4
@@ -76,7 +88,12 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `product` to test your code.
 */
 
-
+function multiply(num1, num2){
+  var product = num1 * num2;
+  return product;
+}
+var product = multiply(bango1, bango2);
+console.log(product);
 
 /*
  * #5
@@ -92,7 +109,12 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `quotient` to test your code.
 */
 
-
+function divide(num1, num2){
+  var quotient = num2 / num1;
+  return quotient;
+}
+var quotient = divide(bango1, bango2);
+console.log(quotient);
 
 /*
  * #6
@@ -106,7 +128,10 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */
 
-
+function checkSum(x){
+  return "Mariah Carey has been married " + x + " times.";
+}
+console.log(checkSum(sum))
 
 /*
  * #7
@@ -119,8 +144,11 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will return the string "Last night I dreamt that I ate `x` Taco Bell soft tacos."  Where `x` is the value when you invoke the function. Invoke this function using the variable `difference`.
  * Console.log your results.
 */ 
-
-
+ 
+function checkDifference(x){
+    return "Last night I dreamt that I ate " + x + " Taco Bell soft tacos.";
+}
+console.log(checkDifference(difference));
 
 /*
  * #8
@@ -133,7 +161,10 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.  
 */
 
-
+function checkProduct(){
+  return product;
+}
+console.log(checkProduct(product));
 
 /*
  * #9
@@ -146,7 +177,10 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.  
 */
 
-
+function checkQuotient(){
+  return quotient;
+}
+console.log(checkQuotient(quotient));
 
 /*
  * #10
@@ -168,7 +202,17 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */ 
 
-
+var bango3 = 3;
+var bango4 = 4;
+var bango5 = 5;
+function addThenSubtract(num1, num2, num3){
+var addThenSubtract = num1 + num2 - num3;
+return addThenSubtract;
+}
+console.log(bango1);
+console.log(bango2);
+console.log(bango3);
+console.log(addThenSubtract(bango1, bango2, bango3));
 
 /*
  * #11
@@ -184,7 +228,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */ 
 
-
+function multiplyThenDivide(num1, num2, num3){
+  var multiplyThenDivide = num1 * num2 / num3;
+  return multiplyThenDivide;
+}
+console.log(multiplyThenDivide(bango1, bango2, bango3));
 
 /*
  * #12
@@ -197,9 +245,13 @@ console.log(testGreeting); // printing the output value of the function.
  *
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
-
-
-
+  var firstName = "Keola";
+  var lastName = "Stone";
+  var fullName = firstName + " " + lastName;
+function createFullName(firstName, lastName){
+   return fullName;
+}
+console.log(fullName);
 /*
  * #13 
  * Function - eatFood
@@ -213,8 +265,12 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will use the previous `createFullName` function above to create a message. For example, if you invoked the function like this: eatFood("Biggie", "Smalls", "Won Ton Soup"); it will display the message "Biggie Smalls eats Won Ton Soup everyday for breakfast."
  * Console.log your result.
  */
-
-
+    var food = "Cheesy Fries";
+function eatFood(firstName, lastName, food){
+    var eatFood = fullName + " eats " + food + " everyday for breakfast."
+  return eatFood;
+}
+console.log(eatFood(firstName,lastName,food));
 
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
@@ -229,7 +285,12 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result. 
 */
 
-
+function shoeSize(inches){
+  var centimeters = inches * 2.54;
+  return centimeters;
+}
+var inches = 5;
+console.log(shoeSize(inches));
 
 /*
  * #15
@@ -241,7 +302,15 @@ console.log(testGreeting); // printing the output value of the function.
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
  
+ /*var str = "Hello World!";
+ var res = str.toUpperCase();
+ console.log(res);*/
 
+function allCaps(str){
+  var res = str.toUpperCase();
+  return res;
+}
+console.log(allCaps("make it happen!"));
 
 /*
  * #16
@@ -251,8 +320,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */
 
-
-
+function firstCap(str){
+  var res = str.charAt(0).toUpperCase() + str.slice(1);
+  return res;
+}
+console.log(firstCap("rajah dat!"));
 /*
  * #17
  * Function - verifyDrinkingAge
@@ -263,16 +335,38 @@ console.log(testGreeting); // printing the output value of the function.
  * Call this function and pass in a number value.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
-
-
-
+var age = 25;
+function verifyDrinkingAge(age){
+  var canDrink = (age >= 21);
+  if (age >= 21){
+    return true;
+}else{
+    return false;
+}
+};
+if(age >= 21){
+  console.log("welcome to the club!");
+}else{
+  console.log("beat it...");
+}
 /**
  * #18
  * Function - throwParty
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
 
-
+function throwParty(shootsDen){
+  if (canDrink = true){
+    return true;
+  }else{
+    return false;
+  }
+};
+if (canDrink = false){
+  console.log("Cheee Hoo! We going to da party!");
+}else{
+  console.log("Meh, see you ar Starbucks.");
+}
 
 
 
